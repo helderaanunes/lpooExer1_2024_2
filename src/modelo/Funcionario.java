@@ -12,6 +12,15 @@ public class Funcionario {
     // poderia ser feito assim, mas não seria orientado a objetos, então vou criar a classe não apenas um atributo indicando que égerente.
     // private boolean ehGerente;
 
+    /*
+    o sistema deve calcular os salários, levando em consideração o
+    salário base, o bônus de gerência e quaisquer gratificações. 
+    O cálculo do salário deve ser feito no final de cada mês.
+    */
+    public float getSalarioBruto(float gratificacao){
+      return this.getSalarioBase() + gratificacao;
+    }
+    
     public String getNome() {
         return nome;
     }

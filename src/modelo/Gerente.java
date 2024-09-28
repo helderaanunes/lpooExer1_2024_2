@@ -13,8 +13,9 @@ public class Gerente extends Funcionario{
     // não preciso criar um atributo para o salário bruto.
     // basta o método get, tente lembrar sobre atributos
     // abstratos de banco de dados (data de nascimento e idade).
-    public float getSalarioBruto(){
-      return this.getSalarioBase()*(bonusSalarial+1);
+    @Override
+    public float getSalarioBruto(float gratificacao){
+      return this.getSalarioBase()*(bonusSalarial+1) + gratificacao;
     }
 
     public float getBonusSalarial() {
