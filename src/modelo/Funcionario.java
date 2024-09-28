@@ -8,7 +8,7 @@ public class Funcionario {
     private int id; //numero de identificação única.
     private float salarioBase;
     private Departamento departamento;
-    
+    private FuncionarioProjeto [] funcionarioProjetos;
     // poderia ser feito assim, mas não seria orientado a objetos, então vou criar a classe não apenas um atributo indicando que égerente.
     // private boolean ehGerente;
 

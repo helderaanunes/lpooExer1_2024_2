@@ -18,7 +18,7 @@ public class Projeto {
     envolve uma equipe de funcionários alocados.
     */
     private Gerente gerente;
-    private Funcionario funcionarios [];
+    private FuncionarioProjeto funcionariosProjetos [];
 
     /*
     Esses projetos podem ser de desenvolvimento de 
@@ -55,13 +55,15 @@ public class Projeto {
         this.gerente = gerente;
     }
 
-    public Funcionario[] getFuncionarios() {
-        return funcionarios;
+    public FuncionarioProjeto[] getFuncionariosProjetos() {
+        return funcionariosProjetos;
     }
 
-    public void setFuncionarios(Funcionario [] funcionarios) {
-        this.funcionarios = funcionarios;
+    public void setFuncionariosProjetos(FuncionarioProjeto[] funcionariosProjetos) {
+        this.funcionariosProjetos = funcionariosProjetos;
     }
+
+    
             
     
     public String getTitulo() {
