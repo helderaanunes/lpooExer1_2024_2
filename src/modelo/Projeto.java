@@ -12,6 +12,13 @@ public class Projeto {
     private Date dataDeInicio;
     private Date dataDeTermino;
     private float orcamento;
+    /*
+     Os funcionários podem ser promovidos a cargos de liderança de
+projetos, e essa experiência deve ser registrada no sistema 
+para fins de avaliação de desempenho.
+    */
+    private Departamento departamento;
+    
     
     /*
     Cada projeto é supervisionado por um gerente e 
@@ -43,6 +50,14 @@ public class Projeto {
 
     public void setAreaDoProjeto(String areaDoProjeto) {
         this.areaDoProjeto = areaDoProjeto;
+    }
+
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
     }
     
     
