@@ -14,7 +14,8 @@ public class Departamento {
     private String gerente;
     // Eu criei como String pois ainda não li a questão toda
     // e não sei o tipo/classe desses funcionários.
-    private String listaFuncionarios [];
+    //agora eu já sei o tipo do funcionário
+    private Funcionario listaFuncionarios [];
     public String getAreaDeAtuacao() {
         return areaDeAtuacao;
     }
