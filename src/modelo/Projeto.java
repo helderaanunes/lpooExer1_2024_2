@@ -12,7 +12,31 @@ public class Projeto {
     private Date dataDeInicio;
     private Date dataDeTermino;
     private float orcamento;
+    
+    /*
+    Cada projeto é supervisionado por um gerente e 
+    envolve uma equipe de funcionários alocados.
+    */
+    private Gerente gerente;
+    private Funcionario funcionarios [];
 
+    public Gerente getGerente() {
+        return gerente;
+    }
+
+    public void setGerente(Gerente gerente) {
+        this.gerente = gerente;
+    }
+
+    public Funcionario[] getFuncionarios() {
+        return funcionarios;
+    }
+
+    public void setFuncionarios(Funcionario [] funcionarios) {
+        this.funcionarios = funcionarios;
+    }
+            
+    
     public String getTitulo() {
         return titulo;
     }
