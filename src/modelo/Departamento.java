@@ -11,7 +11,9 @@ public class Departamento {
     private String areaDeAtuacao;
     // Eu criei como String pois ainda não li a questão toda
     // e não sei o tipo/classe desse gerente.
-    private String gerente;
+    // Agora que eu já sei da minha classe gerente,
+    //então posso mudar para o tipo Gerente
+    private Gerente gerente;
     // Eu criei como String pois ainda não li a questão toda
     // e não sei o tipo/classe desses funcionários.
     //agora eu já sei o tipo do funcionário
