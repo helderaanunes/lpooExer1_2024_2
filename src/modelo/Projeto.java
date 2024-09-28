@@ -26,6 +26,16 @@ public class Projeto {
     outra atividade que a empresa julgar necessária.
     */
     private String areaDoProjeto;
+    
+    /*
+    Um projeto não pode existir sem um gerente 
+    responsável, e o gerente deve ser alocado a 
+    apenas um departamento.
+    */
+    //Composição
+    public Projeto(Gerente gerente){
+        this.gerente = gerente;
+    }
 
     public String getAreaDoProjeto() {
         return areaDoProjeto;
