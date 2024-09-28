@@ -5,6 +5,7 @@ Os gerentes também são responsáveis por monitorar os projetos de seu departam
 */
 public class Gerente extends Funcionario{
     private float bonusSalarial;
+    
     //Como o gerente sempre terá o bonus, então é uma composição.
     public Gerente (float bonusSalarial){
         this.bonusSalarial=bonusSalarial;
@@ -15,4 +16,14 @@ public class Gerente extends Funcionario{
     public float getSalarioBruto(){
       return this.getSalarioBase()*(bonusSalarial+1);
     }
+
+    public float getBonusSalarial() {
+        return bonusSalarial;
+    }
+
+    public void setBonusSalarial(float bonusSalarial) {
+        this.bonusSalarial = bonusSalarial;
+    }
+    
+    
 }
