@@ -20,6 +20,23 @@ public class Projeto {
     private Gerente gerente;
     private Funcionario funcionarios [];
 
+    /*
+    Esses projetos podem ser de desenvolvimento de 
+    software, campanhas de marketing ou qualquer 
+    outra atividade que a empresa julgar necessária.
+    */
+    private String areaDoProjeto;
+
+    public String getAreaDoProjeto() {
+        return areaDoProjeto;
+    }
+
+    public void setAreaDoProjeto(String areaDoProjeto) {
+        this.areaDoProjeto = areaDoProjeto;
+    }
+    
+    
+    
     public Gerente getGerente() {
         return gerente;
     }
